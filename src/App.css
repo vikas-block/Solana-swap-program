@@ -1,0 +1,198 @@
+/* /* /* Main wrapper */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(180deg, #fdfdfd, rgb(3, 6, 34));
+}
+ */
+
+/* Container box styling */
+.screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.box {
+  background-color: #1f2937;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  text-align: center;
+}
+
+/* Heading styling */
+.heading {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #3b82f6;
+  font-weight: 600;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Input group styling */
+.input-group {
+  margin-bottom: 1.5rem;
+ 
+}
+
+.label {
+  display: flex;
+  justify-content: left;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #cbd5e1;
+  margin-bottom: 0.5rem;
+
+}
+
+.input-row {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: left;
+  width: 400px;
+  height: auto;
+  font-weight: bold;
+  
+}
+
+/* Input fields */
+.input {
+  height: auto;
+  width: 200px;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  background-color: #e5e7eb;
+  border: 2px solid #d1d5db;
+  color: #1f2937;
+  transition: border-color 0.3s ease;
+  font-weight: bold;
+  
+}
+
+.input:focus {
+  border-color: #60a5fa;
+  outline: none;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+  width: 400px;
+}
+
+.swap-btn, .buy-btn {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.swap-btn {
+  background: #2563eb;
+}
+
+.swap-btn:hover {
+  background: #3b82f6;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.4);
+}
+
+.buy-btn {
+  background: #16a34a;
+}
+
+.buy-btn:hover {
+  background: #22c55e;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(22, 163, 74, 0.4);
+}
+
+/* Wallet button */
+.wallet {
+  margin-top: 1.5rem;
+}
+
+.wallet-btn {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  background-color: hsl(240, 7%, 92%);
+  color: hsl(0, 14%, 3%);
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.wallet-btn:hover {
+  background-color: #1b156e;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px hsla(208, 20%, 81%, 0.4);
+  color:#e5e7eb;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+  .box {
+    width: 90%;
+  }
+  
+  .input {
+    font-size: 0.875rem;
+  }
+} 
+
+
+.custom-select {
+  position: relative;
+  width: 300px;
+}
+
+.selected-option {
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dropdown-options {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 100;
+}
+
+.custom-select:hover .dropdown-options {
+  display: block;
+}
+
+/* .dropdown-options li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-options li:hover {
+  background-color: #f1f1f1;
+} */
+
+
